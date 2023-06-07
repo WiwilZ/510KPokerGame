@@ -1,0 +1,27 @@
+[2022-10-02 10:52:37.120134][41860:21648][Command.cpp:168]debug:Program 0.7.0.1 initialized!
+[2022-10-02 10:52:37.122128][41860:21648][Command.cpp:169]debug:Compile platforms: Essl 100 .
+[2022-10-02 10:52:37.122128][41860:21648][Command.cpp:170]debug:Compile sources: C:/Users/WiwilZ/Desktop/510K/assets/Scenes/NewFile.effect .
+[2022-10-02 10:52:37.122128][41860:21648][Command.cpp:171]debug:Compile output directory: C:/Users/WiwilZ/Desktop/510K/minigame/__temp/tempProcess/EffectProcess/3df0fcR-cfad16E-7f12d7S-5540fbR .
+[2022-10-02 10:52:37.122128][41860:21648][Command.cpp:172]debug:Compile include directories: C:/Users/WiwilZ/Desktop/510K/assets/Scenes, C:/Users/WiwilZ/Desktop/510K/minigame/ .
+[2022-10-02 10:52:37.122128][41860:21648][Command.cpp:173]debug:Compile log file directory: C:/Users/WiwilZ/Desktop/510K/minigame/__temp/__effect/log/temp .
+[2022-10-02 10:52:37.122128][41860:21648][Command.cpp:174]debug:Compile extra defines:  .
+[2022-10-02 10:52:37.122128][41860:21648][Command.cpp:175]debug:Compile varaint only: false .
+[2022-10-02 10:52:37.123126][41860:21648][Command.cpp:176]debug:Compile template only: false .
+[2022-10-02 10:52:37.123126][41860:21648][main.cpp:55]trace:Parsing effect C:/Users/WiwilZ/Desktop/510K/assets/Scenes/NewFile.effect ...
+[2022-10-02 10:52:37.125119][41860:21648][main.cpp:66]trace:Compiling effect C:/Users/WiwilZ/Desktop/510K/assets/Scenes/NewFile.effect ...
+[2022-10-02 10:52:37.190943][41860:21648][Compiler.cpp:67]info:C:/Users/WiwilZ/Desktop/510K/assets/Scenes/NewFile.effect_0 done in 0.064s.
+[2022-10-02 10:52:37.216908][41860:21648][Compiler.cpp:67]info:C:/Users/WiwilZ/Desktop/510K/assets/Scenes/NewFile.effect_1 done in 0.027s.
+[2022-10-02 10:52:37.216908][41860:21648][main.cpp:101]trace:Writing file C:/Users/WiwilZ/Desktop/510K/minigame/__temp/tempProcess/EffectProcess/3df0fcR-cfad16E-7f12d7S-5540fbR/Essl-100/NewFile.effect ...
+[2022-10-02 10:52:37.219867][41860:21648][main.cpp:106]debug:Total cost 0.097s.
+[2022-10-02 11:22:51.074633][7380:13632][Command.cpp:168]debug:Program 0.7.0.1 initialized!
+[2022-10-02 11:22:51.076627][7380:13632][Command.cpp:169]debug:Compile platforms: Essl 100 .
+[2022-10-02 11:22:51.076627][7380:13632][Command.cpp:170]debug:Compile sources: C:/Users/WiwilZ/Desktop/510K/assets/Scenes/NewFile.effect .
+[2022-10-02 11:22:51.076627][7380:13632][Command.cpp:171]debug:Compile output directory: C:/Users/WiwilZ/Desktop/510K/minigame/__temp/tempProcess/EffectProcess/3df0fcR-cfad16E-7f12d7S-5540fbR .
+[2022-10-02 11:22:51.076627][7380:13632][Command.cpp:172]debug:Compile include directories: C:/Users/WiwilZ/Desktop/510K/assets/Scenes, C:/Users/WiwilZ/Desktop/510K/minigame/ .
+[2022-10-02 11:22:51.076627][7380:13632][Command.cpp:173]debug:Compile log file directory: C:/Users/WiwilZ/Desktop/510K/minigame/__temp/__effect/log/temp .
+[2022-10-02 11:22:51.076627][7380:13632][Command.cpp:174]debug:Compile extra defines:  .
+[2022-10-02 11:22:51.076627][7380:13632][Command.cpp:175]debug:Compile varaint only: false .
+[2022-10-02 11:22:51.076627][7380:13632][Command.cpp:176]debug:Compile template only: false .
+[2022-10-02 11:22:51.076627][7380:13632][main.cpp:55]trace:Parsing effect C:/Users/WiwilZ/Desktop/510K/assets/Scenes/NewFile.effect ...
+[2022-10-02 11:22:51.077625][7380:13632][main.cpp:66]trace:Compiling effect C:/Users/WiwilZ/Desktop/510K/assets/Scenes/NewFile.effect ...
+[2022-10-02 11:22:51.078623][7380:13632][Utils.cpp:139]error:Fail to read effect file: "C:/Users/WiwilZ/Desktop/510K/assets/Scenes/NewFile.pixel.hlsl".

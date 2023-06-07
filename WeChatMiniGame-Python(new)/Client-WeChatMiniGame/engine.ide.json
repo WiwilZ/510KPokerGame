@@ -1,0 +1,205 @@
+{
+	"gameJson": {
+		"deviceOrientation": "landscape",
+		"engine": true,
+		"plugins": {
+			"WXEngine": {
+				"version": "1.1.39",
+				"provider": "wx20afc706a711eefc",
+				"contexts": [
+					{
+						"type": "isolatedContext"
+					}
+				]
+			}
+		},
+		"showStatusBar": false,
+		"resizable": false,
+		"disableSetUserStorageFromMiniProgram": false,
+		"networkTimeout": {
+			"request": 60000,
+			"connectSocket": 60000,
+			"uploadFile": 60000,
+			"downloadFile": 60000
+		},
+		"lockStepOptions": {
+			"gameTick": 33,
+			"heartBeatTick": 2000,
+			"offlineTimeLength": 100000,
+			"UDPReliabilityStrategy": 3,
+			"dataType": "String"
+		},
+		"permission": {
+			"scope.userInfo": {
+				"desc": ""
+			},
+			"scope.userLocation": {
+				"desc": ""
+			},
+			"scope.werun": {
+				"desc": ""
+			},
+			"scope.writePhotosAlbum": {
+				"desc": ""
+			}
+		},
+		"subpackages": [],
+		"navigateToMiniProgramAppIdList": [],
+		"workers": "",
+		"openDataContext": "",
+		"openDataContextExtension": false
+	},
+	"engineVersion": "1.1.39",
+	"engineProjectId": "5a545f557fd0df9b581c0a800a",
+	"engineConfigJson": {
+		"globalSetting": {
+			"baseURL": "cloud://cloud1-8g72byy03d1be738.636c-cl",
+			"designWidth": 1280,
+			"designHeight": 720,
+			"logFilter": "",
+			"logLevel": 3,
+			"layers": [
+				"Default",
+				"TransparentFx",
+				"Ignore Ragcast",
+				"",
+				"Water",
+				"UI",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				""
+			],
+			"physics3DLayerCollisionMatrix": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+			"backupURLs": [],
+			"defaultSceneType": "2D",
+			"globalHTTPRetry": 0,
+			"useEngineSubcontext": false,
+			"workerPath": "",
+			"audio": {
+				"globalVolume": 1,
+				"maxRealVoices": 20
+			},
+			"physics2DLayerCollisionMatrix": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+		}
+	},
+	"cli": {
+		"dispatchAction": ""
+	},
+	"buildConfigList": [
+		{
+			"platformName": "BuildWX",
+			"platformWording": "微信小游戏",
+			"projectRootPath": "minigame/",
+			"distPath": "minigame/assets",
+			"assetsGameJsPath": "minigame/assets/game.js"
+		},
+		{
+			"platformName": "BuildH5",
+			"platformWording": "H5小游戏",
+			"projectRootPath": "minigame-1-BuildH5/",
+			"distPath": "minigame-1-BuildH5/assets",
+			"assetsGameJsPath": "minigame-1-BuildH5/assets/game.js",
+			"customConfig": {
+				"shouldWindowDefineEngineCode": true,
+				"useLocalServer": true
+			},
+			"usingPlatformIndex": 0,
+			"buildWebGLEngine": true
+		},
+		{
+			"platformName": "BuildQQ",
+			"platformWording": "QQ小游戏",
+			"projectRootPath": "minigame-1-BuildQQ/",
+			"distPath": "minigame-1-BuildQQ/assets",
+			"assetsGameJsPath": "minigame-1-BuildQQ/assets/game.js",
+			"usingPlatformIndex": 0,
+			"buildWebGLEngine": true
+		}
+	],
+	"ignoreFBX": false,
+	"layers": [
+		"Default",
+		"TransparentFx",
+		"Ignore Ragcast",
+		"",
+		"Water",
+		"UI",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		""
+	],
+	"physics2DLayerCollisionMatrix": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+	"physics3DLayerCollisionMatrix": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+	"build": {
+		"mainScene": {
+			"2d": "assets/resource/mygame2d.scene",
+			"3d": "assets/resource/mygame.scene"
+		},
+		"onlyBuildScript": false,
+		"clearAllBuildCache": false,
+		"usingPlatform": [
+			[
+				"default"
+			]
+		],
+		"textureCompressionEncodeQuality": {
+			"pvr": "pvrtcfast",
+			"etc": "etcfastperceptual",
+			"astc": "astcmedium",
+			"s3tc": "normal"
+		},
+		"disableAutoRegisterPack": false,
+		"disablePackRegisterCache": false
+	},
+	"debug": {
+		"nativeDebugLogLevel": 3,
+		"nativeDebugLogFile": false,
+		"nativeDebugLogConsole": false
+	}
+}

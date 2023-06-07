@@ -1,0 +1,38 @@
+{
+  "name": "System::Effect::Mask2D",
+  "shaderProperties": [],
+  "textures": [
+    {
+      "key": "u_texture",
+      "type": "Texture2D",
+      "default": "white"
+    }
+  ],
+  "defaultRenderQueue": 5000,
+  "passes": [
+    {
+      "lightMode": "ForwardBase",
+      "vs": "./Image2D.vertex.hlsl",
+      "ps": "./Image2D.pixel.hlsl",
+      "multiCompile": [],
+      "useMaterialRenderStates": true,
+      "renderStates": {
+        "cullOn": false,
+        "depthWrite": false,
+        "depthTestOn": false,
+        "blendOn": false,
+        "stencilTestOn": true,
+        "stencilRef": 0,
+        "stencilReadMask": 0,
+        "stencilWriteMask": 0,
+        "stencilComp": "NEVER",
+        "stencilPass": "KEEP",
+        "stencilFail": "REPLACE",
+        "stencilZFail": "KEEP"
+      }
+    }
+  ],
+  "editorInfo":{
+    "assetVersion":2
+  }
+}

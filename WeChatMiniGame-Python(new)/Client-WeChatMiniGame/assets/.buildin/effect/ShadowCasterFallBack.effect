@@ -1,0 +1,27 @@
+{
+  "name": "System::Effect::ShadowCasterFallBack",
+  "shaderProperties": [],
+  "textures": [],
+  "defaultRenderQueue": 2000,
+  "passes": [
+    {
+      "lightMode": "ShadowCaster",
+      "vs": "./shadowCasterFallBack.vertex.hlsl",
+      "ps": "./shadowCasterFallBack.pixel.hlsl",
+      "compileFlags": [
+        "Skin",
+        "SkinnedAnimation"
+      ],
+      "multiCompile": [],
+      "useMaterialRenderStates": true,
+      "renderStates": {
+        "blendOn": false,
+        "cullOn": true,
+        "cullFace": "BACK"
+      }
+    }
+  ],
+  "editorInfo":{
+    "assetVersion":2
+  }
+}

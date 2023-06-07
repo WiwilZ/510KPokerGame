@@ -1,0 +1,203 @@
+{
+    "name": "System::Effect::StandardLit",
+    "shaderProperties": [
+        {
+            "key": "_MainTex_ST",
+            "type": "Vector4",
+            "default": [
+                1,
+                1,
+                0,
+                0
+            ]
+            
+        },
+        {
+            "key": "_Color",
+            "type": "Vector4",
+            "default": [
+                0.5,
+                0.5,
+                0.5,
+                1
+            ]
+        },
+        {
+            "key": "_Specular",
+            "type": "Vector4",
+            "default": [
+                0.2,
+                0.2,
+                0.2,
+                1
+            ]
+        },
+        {
+            "key": "_EmissionColor",
+            "type": "Vector4",
+            "default": [
+                0,
+                0,
+                0,
+                1
+            ]
+        },
+        {
+            "key": "_Cutoff",
+            "type": "Float",
+            "default": [
+                0.5
+            ]
+        },
+        {
+            "key": "_Glossiness",
+            "type": "Float",
+            "default": [
+                0.5
+            ]
+        },
+        {
+            "key": "_GlossMapScale",
+            "type": "Float",
+            "default": [
+                1.0
+            ]
+        },
+        {
+            "key": "_Metallic",
+            "type": "Float",
+            "default": [
+                0.0
+            ]
+        }
+    ],
+    "textures": [
+        {
+            "key": "_MainTex",
+            "type": "Texture2D",
+            "default": "white"
+        },
+        {
+            "key": "_NormalMap",
+            "type": "Texture2D",
+            "default": "white"
+        },
+        {
+            "key": "_EmissionMap",
+            "type": "Texture2D",
+            "default": "black"
+        },
+        {
+            "key": "_OcclusionMap",
+            "type": "Texture2D",
+            "default": "white"
+        },
+        {
+            "key": "_SpecGlossMap",
+            "type": "Texture2D",
+            "default": "white"
+        },
+        {
+            "key": "_MetallicGlossMap",
+            "type": "Texture2D",
+            "default": "white"
+        }
+    ],
+    "defaultRenderQueue": 2000,
+    "passes": [
+        {
+            "lightMode": "ForwardBase",
+            "vs": "./StandardLit.vertex.hlsl",
+            "ps": "./StandardLit.pixel.hlsl",
+            "compileFlags": [
+                "Fog",
+                "Shadow",
+                "Skin",
+                "LightMap"
+            ],
+            "multiCompile": [
+                [
+                    "_SPECULAR_SETUP",
+                    "__"
+                ],
+                [
+                    "USE_METALLICSPECGLOSSMAP",
+                    "__"
+                ],
+                [
+                    "USE_NORMALMAP",
+                    "__"
+                ],
+                [
+                    "USE_EMISSIONMAP",
+                    "__"
+                ],
+                [
+                    "USE_AOMAP",
+                    "__"
+                ],
+                [
+                    "USE_ALPHA_TEST",
+                    "__"
+                ]
+            ],
+            "shaderFeatures": [],
+            "skipVariants": [],
+            "useMaterialRenderStates": true,
+            "renderStates": {
+                "blendOn": false,
+                "cullOn": true,
+                "cullFace": "BACK"
+            }
+        },
+        {
+            "lightMode": "ForwardAdd",
+            "vs": "./StandardLitAdd.vertex.hlsl",
+            "ps": "./StandardLitAdd.pixel.hlsl",
+            "compileFlags": [
+                "Fog",
+                "Skin"
+            ],
+            "multiCompile": [
+                [
+                    "_SPECULAR_SETUP",
+                    "__"
+                ],
+                [
+                    "USE_METALLICSPECGLOSSMAP",
+                    "__"
+                ],
+                [
+                    "USE_NORMALMAP",
+                    "__"
+                ],
+                [
+                    "USE_EMISSIONMAP",
+                    "__"
+                ],
+                [
+                    "USE_AOMAP",
+                    "__"
+                ],
+                [
+                    "USE_ALPHA_TEST",
+                    "__"
+                ]
+            ],
+            "shaderFeatures": [],
+            "skipVariants": [],
+            "useMaterialRenderStates": false,
+            "renderStates": {
+                "blendOn": true,
+                "blendSrc": "ONE",
+                "blendDst": "ONE",
+                "blendFunc": "ADD",
+                "cullOn": true,
+                "cullFace": "BACK"
+            }
+        }
+    ],
+    "editorInfo": {
+        "assetVersion": 2
+    }
+}

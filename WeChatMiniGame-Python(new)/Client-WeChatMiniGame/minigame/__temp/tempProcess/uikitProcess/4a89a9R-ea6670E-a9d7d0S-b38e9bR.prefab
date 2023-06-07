@@ -1,0 +1,46 @@
+{
+    "gameObjectList": [
+        {
+            "name": "DefaultPrefab",
+            "children": [],
+            "components": [
+                0
+            ],
+            "data": {
+                "active": true
+            },
+            "__localId": "$LOCAL$7507854783323319$ID$"
+        }
+    ],
+    "componentList": [
+        {
+            "type": "Transform3D",
+            "data": {
+                "position": [
+                    0,
+                    0,
+                    0
+                ],
+                "rotation": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "scale": [
+                    1,
+                    1,
+                    1
+                ]
+            },
+            "__localId": "$LOCAL$6259315777160813$ID$"
+        }
+    ],
+    "meta": {
+        "name": "SamplePrefab",
+        "type": "3D"
+    },
+    "editorInfo": {
+        "assetVersion": 4
+    }
+}

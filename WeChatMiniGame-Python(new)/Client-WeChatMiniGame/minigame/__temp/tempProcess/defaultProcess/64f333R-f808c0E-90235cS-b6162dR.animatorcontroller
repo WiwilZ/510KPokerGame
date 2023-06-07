@@ -1,0 +1,42 @@
+{
+  "name": "NewAnimatorController",
+  "layers": [
+    {
+      "name": "Base Layer",
+      "stateMachine": 0,
+      "blending": 0,
+      "weight": 1
+    }
+  ],
+  "stateMachines": [
+    {
+      "name": "Base Layer",
+      "defaultState": null,
+      "anyStateTransitions": [],
+      "states": []
+    }
+  ],
+  "states": [],
+  "transitions": [],
+  "blendTrees": [],
+  "parameters": [],
+  "editorInfo": {
+    "stateMachines": [
+      {
+        "name": "Base Layer",
+        "entryPosition": [
+          50,
+          120
+        ],
+        "exitPosition": [
+          800,
+          120
+        ],
+        "anyStatePosition": [
+          50,
+          20
+        ]
+      }
+    ]
+  }
+}

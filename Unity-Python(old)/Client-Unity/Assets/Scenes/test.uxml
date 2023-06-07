@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:IMGUIContainer style="height: 298px; align-items: stretch; justify-content: space-between; background-image: url(&apos;project://database/Assets/Textures/Background/bg4.png?fileID=2800000&amp;guid=7e84f7a8fab223640a83bb31e62ab78a&amp;type=3#bg4&apos;); margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; position: relative; left: 134px; width: 478px;">
+        <ui:IMGUIContainer style="height: 140px; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; background-color: rgba(229, 210, 152, 0.5); border-top-left-radius: 10px; border-top-right-radius: 10px;">
+            <ui:Label text="Label" display-tooltip-when-elided="true" style="height: 103px; flex-direction: row;" />
+        </ui:IMGUIContainer>
+        <ui:IMGUIContainer style="height: 140px; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; background-color: rgba(195, 186, 181, 0.5); border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;" />
+    </ui:IMGUIContainer>
+</ui:UXML>

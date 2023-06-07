@@ -1,0 +1,30 @@
+{
+  "name": "System::Effect::Blit",
+  "shaderProperties": [],
+  "textures": [
+    {
+      "key": "sourceTex",
+      "type": "Texture2D",
+      "default": "white"
+    }
+  ],
+  "defaultRenderQueue": 2000,
+  "passes": [{
+    "lightMode": "Default",
+    "vs": "./Screen.vertex.hlsl",
+    "ps": "./Screen.pixel.hlsl",
+    "multiCompile": [],
+    "shaderFeatures": [],
+    "skipVariants": [],
+    "compileFlags": [],
+    "useMaterialRenderStates": false,
+    "renderStates": {
+      "blendOn": false,
+      "depthTestOn": false,
+      "cullOn": false
+    }
+  }],
+  "editorInfo": {
+    "assetVersion": 2
+  }
+}

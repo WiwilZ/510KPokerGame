@@ -1,0 +1,1 @@
+{"gameObjectList":[{"name":"DefaultPrefab","children":[],"components":[0],"data":{"active":true}}],"componentList":[{"type":"Transform2D","data":{"position":[0,0],"rotation":0,"scale":[1,1],"size":[0,0],"anchor":[0.5,0.5]}}],"meta":{"name":"SamplePrefab","type":"2D"}}

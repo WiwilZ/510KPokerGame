@@ -1,0 +1,55 @@
+{
+    "name": "System::Effect::Skybox",
+    "shaderProperties": [
+        {
+            "key": "_TintColor",
+            "type": "Vector4",
+            "default": [
+                0.5,
+                0.5,
+                0.5,
+                1
+            ]
+        },
+        {
+            "key": "_Exposure",
+            "type": "Float",
+            "default": [
+                1
+            ]
+        },
+        {
+            "key": "_Rotation",
+            "type": "Float",
+            "default": [
+                0
+            ]
+        }
+    ],
+    "textures": [
+        {
+            "key": "_MainTex",
+            "type": "TextureCube",
+            "default": "white"
+        }
+    ],
+    "defaultRenderQueue": 2499,
+    "passes": [
+        {
+            "lightMode": "Skybox",
+            "vs": "./Skybox.vertex.hlsl",
+            "ps": "./Skybox.pixel.hlsl",
+            "multiCompile": [],
+            "useMaterialRenderStates": true,
+            "renderStates": {
+                "blendOn": false,
+                "cullOn": false,
+                "depthWrite": false,
+                "depthTestOn": false
+            }
+        }
+    ],
+    "editorInfo": {
+        "assetVersion": 2
+    }
+}

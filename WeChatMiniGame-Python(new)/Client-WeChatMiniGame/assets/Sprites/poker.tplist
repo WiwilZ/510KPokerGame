@@ -1,0 +1,589 @@
+{
+  "frames":[
+    {
+      "filename": "0.png.spriteframe",
+      "rect": [
+        0,
+        0,
+        117,
+        160
+      ],
+      "rotated": false,
+      "trimmed": false
+    }, 
+    {
+      "filename": "1.png.spriteframe",
+      "rect": [
+        117,
+        0,
+        117,
+        160
+      ],
+      "rotated": false,
+      "trimmed": false
+    }, 
+    {
+      "filename": "2.png.spriteframe",
+      "rect": [
+        234,
+        0,
+        117,
+        160
+      ],
+      "rotated": false,
+      "trimmed": false
+    }, 
+    {
+      "filename": "3.png.spriteframe",
+      "rect": [
+        351,
+        0,
+        117,
+        160
+      ],
+      "rotated": false,
+      "trimmed": false
+    }, 
+    {
+      "filename": "4.png.spriteframe",
+      "rect": [
+        468,
+        0,
+        117,
+        160
+      ],
+      "rotated": false,
+      "trimmed": false
+    }, 
+    {
+      "filename": "5.png.spriteframe",
+      "rect": [
+        585,
+        0,
+        117,
+        160
+      ],
+      "rotated": false,
+      "trimmed": false
+    }, 
+    {
+      "filename": "6.png.spriteframe",
+      "rect": [
+        702,
+        0,
+        117,
+        160
+      ],
+      "rotated": false,
+      "trimmed": false
+    }, 
+    {
+      "filename": "7.png.spriteframe",
+      "rect": [
+        819,
+        0,
+        117,
+        160
+      ],
+      "rotated": false,
+      "trimmed": false
+    }, 
+    {
+      "filename": "8.png.spriteframe",
+      "rect": [
+        936,
+        0,
+        117,
+        160
+      ],
+      "rotated": false,
+      "trimmed": false
+    }, 
+    {
+      "filename": "9.png.spriteframe",
+      "rect": [
+        1053,
+        0,
+        117,
+        160
+      ],
+      "rotated": false,
+      "trimmed": false
+    }, 
+    {
+      "filename": "10.png.spriteframe",
+      "rect": [
+        1170,
+        0,
+        117,
+        160
+      ],
+      "rotated": false,
+      "trimmed": false
+    }, 
+    {
+      "filename": "11.png.spriteframe",
+      "rect": [
+        1287,
+        0,
+        117,
+        160
+      ],
+      "rotated": false,
+      "trimmed": false
+    }, 
+    {
+      "filename": "12.png.spriteframe",
+      "rect": [
+        1404,
+        0,
+        117,
+        160
+      ],
+      "rotated": false,
+      "trimmed": false
+    }, 
+    {
+      "filename": "13.png.spriteframe",
+      "rect": [
+        0,
+        160,
+        117,
+        160
+      ],
+      "rotated": false,
+      "trimmed": false
+    }, 
+    {
+      "filename": "14.png.spriteframe",
+      "rect": [
+        117,
+        160,
+        117,
+        160
+      ],
+      "rotated": false,
+      "trimmed": false
+    }, 
+    {
+      "filename": "15.png.spriteframe",
+      "rect": [
+        234,
+        160,
+        117,
+        160
+      ],
+      "rotated": false,
+      "trimmed": false
+    }, 
+    {
+      "filename": "16.png.spriteframe",
+      "rect": [
+        351,
+        160,
+        117,
+        160
+      ],
+      "rotated": false,
+      "trimmed": false
+    }, 
+    {
+      "filename": "17.png.spriteframe",
+      "rect": [
+        468,
+        160,
+        117,
+        160
+      ],
+      "rotated": false,
+      "trimmed": false
+    }, 
+    {
+      "filename": "18.png.spriteframe",
+      "rect": [
+        585,
+        160,
+        117,
+        160
+      ],
+      "rotated": false,
+      "trimmed": false
+    }, 
+    {
+      "filename": "19.png.spriteframe",
+      "rect": [
+        702,
+        160,
+        117,
+        160
+      ],
+      "rotated": false,
+      "trimmed": false
+    }, 
+    {
+      "filename": "20.png.spriteframe",
+      "rect": [
+        819,
+        160,
+        117,
+        160
+      ],
+      "rotated": false,
+      "trimmed": false
+    }, 
+    {
+      "filename": "21.png.spriteframe",
+      "rect": [
+        936,
+        160,
+        117,
+        160
+      ],
+      "rotated": false,
+      "trimmed": false
+    }, 
+    {
+      "filename": "22.png.spriteframe",
+      "rect": [
+        1053,
+        160,
+        117,
+        160
+      ],
+      "rotated": false,
+      "trimmed": false
+    }, 
+    {
+      "filename": "23.png.spriteframe",
+      "rect": [
+        1170,
+        160,
+        117,
+        160
+      ],
+      "rotated": false,
+      "trimmed": false
+    }, 
+    {
+      "filename": "24.png.spriteframe",
+      "rect": [
+        1287,
+        160,
+        117,
+        160
+      ],
+      "rotated": false,
+      "trimmed": false
+    }, 
+    {
+      "filename": "25.png.spriteframe",
+      "rect": [
+        1404,
+        160,
+        117,
+        160
+      ],
+      "rotated": false,
+      "trimmed": false
+    }, 
+    {
+      "filename": "26.png.spriteframe",
+      "rect": [
+        0,
+        320,
+        117,
+        160
+      ],
+      "rotated": false,
+      "trimmed": false
+    }, 
+    {
+      "filename": "27.png.spriteframe",
+      "rect": [
+        117,
+        320,
+        117,
+        160
+      ],
+      "rotated": false,
+      "trimmed": false
+    }, 
+    {
+      "filename": "28.png.spriteframe",
+      "rect": [
+        234,
+        320,
+        117,
+        160
+      ],
+      "rotated": false,
+      "trimmed": false
+    }, 
+    {
+      "filename": "29.png.spriteframe",
+      "rect": [
+        351,
+        320,
+        117,
+        160
+      ],
+      "rotated": false,
+      "trimmed": false
+    }, 
+    {
+      "filename": "30.png.spriteframe",
+      "rect": [
+        468,
+        320,
+        117,
+        160
+      ],
+      "rotated": false,
+      "trimmed": false
+    }, 
+    {
+      "filename": "31.png.spriteframe",
+      "rect": [
+        585,
+        320,
+        117,
+        160
+      ],
+      "rotated": false,
+      "trimmed": false
+    }, 
+    {
+      "filename": "32.png.spriteframe",
+      "rect": [
+        702,
+        320,
+        117,
+        160
+      ],
+      "rotated": false,
+      "trimmed": false
+    }, 
+    {
+      "filename": "33.png.spriteframe",
+      "rect": [
+        819,
+        320,
+        117,
+        160
+      ],
+      "rotated": false,
+      "trimmed": false
+    }, 
+    {
+      "filename": "34.png.spriteframe",
+      "rect": [
+        936,
+        320,
+        117,
+        160
+      ],
+      "rotated": false,
+      "trimmed": false
+    }, 
+    {
+      "filename": "35.png.spriteframe",
+      "rect": [
+        1053,
+        320,
+        117,
+        160
+      ],
+      "rotated": false,
+      "trimmed": false
+    }, 
+    {
+      "filename": "36.png.spriteframe",
+      "rect": [
+        1170,
+        320,
+        117,
+        160
+      ],
+      "rotated": false,
+      "trimmed": false
+    }, 
+    {
+      "filename": "37.png.spriteframe",
+      "rect": [
+        1287,
+        320,
+        117,
+        160
+      ],
+      "rotated": false,
+      "trimmed": false
+    }, 
+    {
+      "filename": "38.png.spriteframe",
+      "rect": [
+        1404,
+        320,
+        117,
+        160
+      ],
+      "rotated": false,
+      "trimmed": false
+    }, 
+    {
+      "filename": "39.png.spriteframe",
+      "rect": [
+        0,
+        480,
+        117,
+        160
+      ],
+      "rotated": false,
+      "trimmed": false
+    }, 
+    {
+      "filename": "40.png.spriteframe",
+      "rect": [
+        117,
+        480,
+        117,
+        160
+      ],
+      "rotated": false,
+      "trimmed": false
+    }, 
+    {
+      "filename": "41.png.spriteframe",
+      "rect": [
+        234,
+        480,
+        117,
+        160
+      ],
+      "rotated": false,
+      "trimmed": false
+    }, 
+    {
+      "filename": "42.png.spriteframe",
+      "rect": [
+        351,
+        480,
+        117,
+        160
+      ],
+      "rotated": false,
+      "trimmed": false
+    }, 
+    {
+      "filename": "43.png.spriteframe",
+      "rect": [
+        468,
+        480,
+        117,
+        160
+      ],
+      "rotated": false,
+      "trimmed": false
+    }, 
+    {
+      "filename": "44.png.spriteframe",
+      "rect": [
+        585,
+        480,
+        117,
+        160
+      ],
+      "rotated": false,
+      "trimmed": false
+    }, 
+    {
+      "filename": "45.png.spriteframe",
+      "rect": [
+        702,
+        480,
+        117,
+        160
+      ],
+      "rotated": false,
+      "trimmed": false
+    }, 
+    {
+      "filename": "46.png.spriteframe",
+      "rect": [
+        819,
+        480,
+        117,
+        160
+      ],
+      "rotated": false,
+      "trimmed": false
+    }, 
+    {
+      "filename": "47.png.spriteframe",
+      "rect": [
+        936,
+        480,
+        117,
+        160
+      ],
+      "rotated": false,
+      "trimmed": false
+    }, 
+    {
+      "filename": "48.png.spriteframe",
+      "rect": [
+        1053,
+        480,
+        117,
+        160
+      ],
+      "rotated": false,
+      "trimmed": false
+    }, 
+    {
+      "filename": "49.png.spriteframe",
+      "rect": [
+        1170,
+        480,
+        117,
+        160
+      ],
+      "rotated": false,
+      "trimmed": false
+    }, 
+    {
+      "filename": "50.png.spriteframe",
+      "rect": [
+        1287,
+        480,
+        117,
+        160
+      ],
+      "rotated": false,
+      "trimmed": false
+    }, 
+    {
+      "filename": "51.png.spriteframe",
+      "rect": [
+        1404,
+        480,
+        117,
+        160
+      ],
+      "rotated": false,
+      "trimmed": false
+    }
+  ],
+  "meta": {
+    "app": "https://www.codeandweb.com/texturepacker",
+    "version":"1.0",
+    "smartupdate": "$TexturePacker:SmartUpdate:84bb955abf2e09d54b5a56dd1123308a:f1d85b267e691789b595a92329f25ddf:60b61cd8522f57aab649e35ea97d2d1c$",
+    "image": "poker.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 1521,
+      "h": 640
+    },
+    "scale": 1
+  }
+}
+  

@@ -1,0 +1,94 @@
+{
+    "name": "System::Effect::GaussianBlur",
+    "shaderProperties": [
+        {
+            "key": "u_width",
+            "type": "Float",
+            "default": [
+                1
+            ]
+        },
+        {
+            "key": "u_height",
+            "type": "Float",
+            "default": [
+                1
+            ]
+        },
+        {
+            "key": "u_radius",
+            "type": "Float",
+            "default": [
+                20
+            ]
+        },
+        {
+            "key": "u_sampleCount",
+            "type": "Float",
+            "default": [
+                20
+            ]
+        }
+    ],
+    "textures": [
+        {
+            "key": "sourceTex",
+            "type": "Texture2D",
+            "default": "white"
+        },
+        {
+            "key": "filteredTex",
+            "type": "Texture2D",
+            "default": "black"
+        },
+        {
+            "key": "horizontalBlur",
+            "type": "Texture2D",
+            "default": "black"
+        },
+        {
+            "key": "verticalBlur",
+            "type": "Texture2D",
+            "default": "black"
+        }
+    ],
+    "defaultRenderQueue": 2000,
+    "passes": [
+        {
+            "lightMode": "Horizontal",
+            "useMaterialRenderStates": false,
+            "vs": "./Screen.vertex.hlsl",
+            "ps": "./GaussianBlurHorizontal.pixel.hlsl",
+            "renderStates": {
+                "blendOn": false,
+                "depthTestOn": false,
+                "cullOn": false
+            }
+        },
+        {
+            "lightMode": "Vertical",
+            "useMaterialRenderStates": false,
+            "vs": "./Screen.vertex.hlsl",
+            "ps": "./GaussianBlurVertical.pixel.hlsl",
+            "renderStates": {
+                "blendOn": false,
+                "depthTestOn": false,
+                "cullOn": false
+            }
+        },
+        {
+            "lightMode": "Resolve",
+            "useMaterialRenderStates": false,
+            "vs": "./Screen.vertex.hlsl",
+            "ps": "./GaussianBlurResolve.pixel.hlsl",
+            "renderStates": {
+                "blendOn": false,
+                "depthTestOn": false,
+                "cullOn": false
+            }
+        }
+    ],
+    "editorInfo": {
+        "assetVersion": 2
+    }
+}

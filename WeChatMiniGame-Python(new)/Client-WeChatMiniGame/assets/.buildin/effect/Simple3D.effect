@@ -1,0 +1,37 @@
+{
+  "name": "System::Effect::Simple3D",
+  "shaderProperties": [
+    {
+      "key": "_Color",
+      "type": "Vector4",
+      "default": [
+        1,
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "textures": [],
+  "defaultRenderQueue": 3000,
+  "passes": [
+    {
+      "lightMode": "ForwardBase",
+      "vs": "./Simple3D.vertex.hlsl",
+      "ps": "./Simple3D.pixel.hlsl",
+      "multiCompile": [],
+      "useMaterialRenderStates": true,
+      "renderStates": {
+        "blendOn": true,
+        "blendSrc": "SRC_ALPHA",
+        "blendDst": "ONE",
+        "cullOn": false,
+        "cullFace": "BACK",
+        "depthWrite": false
+      }
+    }
+  ],
+  "editorInfo":{
+    "assetVersion":2
+  }
+}

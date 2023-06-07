@@ -1,0 +1,172 @@
+{
+  "name": "System::Effect::BlinnPhong",
+  "shaderProperties": [
+    {
+      "key": "_Color",
+      "type": "Vector4",
+      "default": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "key": "_SpecColor",
+      "type": "Vector4",
+      "default": [
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "key": "_EmissionColor",
+      "type": "Vector4",
+      "default": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "key": "_MainTex_ST",
+      "type": "Vector4",
+      "default": [
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "key": "_AlbedoIntensity",
+      "type": "Float",
+      "default": [
+        1.0
+      ]
+    },
+    {
+      "key": "_Shininess",
+      "type": "Float",
+      "default": [
+        0.1
+      ]
+    },
+    {
+      "key": "_Cutoff",
+      "type": "Float",
+      "default": [
+        0.3
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "key": "_MainTex",
+      "type": "Texture2D",
+      "default": "white"
+    },
+    {
+      "key": "_BumpMap",
+      "type": "Texture2D",
+      "default": "white"
+    },
+    {
+      "key": "_EmissionMap",
+      "type": "Texture2D",
+      "default": "white"
+    },
+    {
+      "key": "_SpecGlossMap",
+      "type": "Texture2D",
+      "default": "white"
+    }
+  ],
+  "defaultRenderQueue": 2000,
+  "passes": [
+    {
+      "lightMode": "ForwardBase",
+      "vs": "./BlinnPhong.vertex.hlsl",
+      "ps": "./BlinnPhong.pixel.hlsl",
+      "compileFlags": [
+        "Fog",
+        "Shadow",
+        "Skin",
+        "SkinnedAnimation",
+        "LightMap"
+      ],
+      "multiCompile": [
+        [
+          "USE_NORMALMAP",
+          "__"
+        ],
+        [
+          "USE_ALPHA_TEST",
+          "__"
+        ],
+        [
+          "USE_EMISSIONMAP",
+          "__"
+        ],
+        [
+          "USE_SPECMAP",
+          "__"
+        ]
+      ],
+      "shaderFeatures": [],
+      "skipVariants": [],
+      "useMaterialRenderStates": true,
+      "renderStates": {
+        "blendOn": false,
+        "cullOn": true,
+        "cullFace": "BACK"
+      }
+    },
+    {
+      "lightMode": "ForwardAdd",
+      "vs": "./BlinnPhongAdd.vertex.hlsl",
+      "ps": "./BlinnPhongAdd.pixel.hlsl",
+      "compileFlags": [
+        "Fog",
+        "Shadow",
+        "Skin",
+        "SkinnedAnimation"
+      ],
+      "multiCompile": [
+        [
+          "USE_NORMALMAP",
+          "__"
+        ],
+        [
+          "USE_ALPHA_TEST",
+          "__"
+        ],
+        [
+          "USE_EMISSIONMAP",
+          "__"
+        ],
+        [
+          "USE_SPECMAP",
+          "__"
+        ]
+      ],
+      "shaderFeatures": [],
+      "skipVariants": [],
+      "useMaterialRenderStates": false,
+      "renderStates": {
+        "blendOn": true,
+        "blendSrc": "ONE",
+        "blendDst": "ONE",
+        "blendFunc": "ADD",
+        "cullOn": true,
+        "cullFace": "BACK"
+      }
+    }
+  ],
+  "editorInfo":{
+    "assetVersion":2
+  }
+}

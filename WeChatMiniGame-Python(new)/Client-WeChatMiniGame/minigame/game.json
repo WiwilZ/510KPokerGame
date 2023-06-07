@@ -1,0 +1,47 @@
+{
+	"deviceOrientation": "landscape",
+	"engine": true,
+	"plugins": {
+		"WXEngine": {
+			"version": "1.1.39",
+			"provider": "wx20afc706a711eefc",
+			"contexts": [
+				{
+					"type": "isolatedContext"
+				}
+			]
+		}
+	},
+	"showStatusBar": false,
+	"resizable": false,
+	"disableSetUserStorageFromMiniProgram": false,
+	"networkTimeout": {
+		"request": 60000,
+		"connectSocket": 60000,
+		"uploadFile": 60000,
+		"downloadFile": 60000
+	},
+	"lockStepOptions": {
+		"gameTick": 33,
+		"heartBeatTick": 2000,
+		"offlineTimeLength": 100000,
+		"UDPReliabilityStrategy": 3,
+		"dataType": "String"
+	},
+	"permission": {
+		"scope.userInfo": {
+			"desc": ""
+		},
+		"scope.userLocation": {
+			"desc": ""
+		},
+		"scope.werun": {
+			"desc": ""
+		},
+		"scope.writePhotosAlbum": {
+			"desc": ""
+		}
+	},
+	"subpackages": [],
+	"navigateToMiniProgramAppIdList": []
+}

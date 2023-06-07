@@ -1,0 +1,127 @@
+{
+    "name": "System::Effect::FastBloom",
+    "comment": "可在 https://www.shadertoy.com/view/ssc3D2 观察效果",
+    "shaderProperties": [
+        {
+            "key": "u_width",
+            "type": "Float",
+            "default": [
+                1
+            ]
+        },
+        {
+            "key": "u_height",
+            "type": "Float",
+            "default": [
+                1
+            ]
+        },
+        {
+            "key": "u_threshold",
+            "type": "Float",
+            "default": [
+                1
+            ]
+        },
+        {
+            "key": "u_softThreshold",
+            "type": "Float",
+            "default": [
+                0.5
+            ]
+        },
+        {
+            "key": "u_radius",
+            "type": "Float",
+            "default": [
+                20
+            ]
+        },
+        {
+            "key": "u_sampleCount",
+            "type": "Float",
+            "default": [
+                20
+            ]
+        },
+        {
+            "key": "u_intensity",
+            "type": "Float",
+            "default": [
+                1
+            ]
+        }
+    ],
+    "textures": [
+        {
+            "key": "sourceTex",
+            "type": "Texture2D",
+            "default": "white"
+        },
+        {
+            "key": "filteredTex",
+            "type": "Texture2D",
+            "default": "black"
+        },
+        {
+            "key": "horizontalBlur",
+            "type": "Texture2D",
+            "default": "black"
+        },
+        {
+            "key": "verticalBlur",
+            "type": "Texture2D",
+            "default": "black"
+        }
+    ],
+    "defaultRenderQueue": 2000,
+    "passes": [
+        {
+            "lightMode": "Prefilter",
+            "useMaterialRenderStates": false,
+            "vs": "./Screen.vertex.hlsl",
+            "ps": "./BloomThreshold.pixel.hlsl",
+            "renderStates": {
+                "blendOn": false,
+                "depthTestOn": false,
+                "cullOn": false
+            }
+        },
+        {
+            "lightMode": "Horizontal",
+            "useMaterialRenderStates": false,
+            "vs": "./Screen.vertex.hlsl",
+            "ps": "./GaussianBlurHorizontal.pixel.hlsl",
+            "renderStates": {
+                "blendOn": false,
+                "depthTestOn": false,
+                "cullOn": false
+            }
+        },
+        {
+            "lightMode": "Vertical",
+            "useMaterialRenderStates": false,
+            "vs": "./Screen.vertex.hlsl",
+            "ps": "./GaussianBlurVertical.pixel.hlsl",
+            "renderStates": {
+                "blendOn": false,
+                "depthTestOn": false,
+                "cullOn": false
+            }
+        },
+        {
+            "lightMode": "Resolve",
+            "useMaterialRenderStates": false,
+            "vs": "./Screen.vertex.hlsl",
+            "ps": "./FastBloomResolve.pixel.hlsl",
+            "renderStates": {
+                "blendOn": false,
+                "depthTestOn": false,
+                "cullOn": false
+            }
+        }
+    ],
+    "editorInfo": {
+        "assetVersion": 2
+    }
+}

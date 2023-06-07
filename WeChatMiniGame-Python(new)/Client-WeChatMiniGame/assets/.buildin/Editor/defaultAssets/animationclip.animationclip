@@ -1,0 +1,27 @@
+{
+  "keyframeData": {
+    "bone": {
+      "sampleList": [],
+      "contentList": []
+    },
+    "meta": {
+      "sampleList": [],
+      "contentList": []
+    },
+    "eventList": [],
+    "frameRate": 60,
+    "totalFrameCount": 0
+  },
+  "data": {
+    "name": "newClip",
+    "paths": [],
+    "wrapMode": 0,
+    "startTime": 0,
+    "stopTime": 0,
+    "loopTime": true,
+    "cycleOffset": 0
+  },
+  "editorInfo": {
+    "assetVersion": 2
+  }
+}

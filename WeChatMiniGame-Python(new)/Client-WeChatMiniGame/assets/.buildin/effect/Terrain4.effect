@@ -1,0 +1,128 @@
+{
+  "name": "System::Effect::Terrain4",
+  "shaderProperties": [
+    {
+      "key": "_Color",
+      "type": "Vector3",
+      "default": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "key": "_SpecColor",
+      "type": "Vector4",
+      "default": [
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "key": "_Shininess",
+      "type": "Float",
+      "default": [
+        0.1
+      ]
+    },
+    {
+      "key": "_Splat0_ST",
+      "type": "Vector4",
+      "default": [
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "key": "_Splat1_ST",
+      "type": "Vector4",
+      "default": [
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "key": "_Splat2_ST",
+      "type": "Vector4",
+      "default": [
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "key": "_Splat3_ST",
+      "type": "Vector4",
+      "default": [
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "key": "_Control_ST",
+      "type": "Vector4",
+      "default": [
+        1,
+        1,
+        0,
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "key": "_Splat0",
+      "type": "Texture2D",
+      "default": "white"
+    },
+    {
+      "key": "_Splat1",
+      "type": "Texture2D",
+      "default": "white"
+    },
+    {
+      "key": "_Splat2",
+      "type": "Texture2D",
+      "default": "white"
+    },
+    {
+      "key": "_Splat3",
+      "type": "Texture2D",
+      "default": "white"
+    },
+    {
+      "key": "_Control",
+      "type": "Texture2D",
+      "default": "white"
+    }
+  ],
+  "defaultRenderQueue": 2000,
+  "passes": [
+    {
+      "lightMode": "ForwardBase",
+      "vs": "./Terrain4.vertex.hlsl",
+      "ps": "./Terrain4.pixel.hlsl",
+       "compileFlags": [
+        "Shadow"
+      ],
+      "useMaterialRenderStates": true,
+      "renderStates": {
+        "blendOn": false,
+        "cullOn": true,
+        "cullFace": "BACK"
+      }
+    }
+  ],
+  "editorInfo":{
+    "assetVersion":2
+  }
+}

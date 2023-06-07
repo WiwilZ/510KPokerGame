@@ -1,0 +1,56 @@
+{
+  "name": "System::Effect::Bloom",
+  "shaderProperties": [],
+  "textures": [],
+  "defaultRenderQueue": 2000,
+  "passes": [
+    {
+      "lightMode": "DownSampling",
+      "useMaterialRenderStates": false,
+      "vs": "./Screen.vertex.hlsl",
+      "ps": "./BoxSampling_0.pixel.hlsl",
+      "renderStates": {}
+    },
+    {
+      "lightMode": "UpSampling",
+      "useMaterialRenderStates": false,
+      "vs": "./Screen.vertex.hlsl",
+      "ps": "./BoxSampling_1.pixel.hlsl",
+      "renderStates": {}
+    },
+    {
+      "lightMode": "AdditiveUpSampling",
+      "useMaterialRenderStates": false,
+      "vs": "./Screen.vertex.hlsl",
+      "ps": "./BoxSampling_1.pixel.hlsl",
+      "renderStates": {
+        "blendOn": true,
+        "blendSrc": "ONE",
+        "blendDst": "ONE",
+        "blendFunc": "ADD"
+      }
+    },
+    {
+      "lightMode": "Additive",
+      "useMaterialRenderStates": false,
+      "vs": "./Screen.vertex.hlsl",
+      "ps": "./BloomBlit.pixel.hlsl",
+      "renderStates": {
+        "blendOn": true,
+        "blendSrc": "ONE",
+        "blendDst": "ONE",
+        "blendFunc": "ADD"
+      }
+    },
+    {
+      "lightMode": "Prefilter",
+      "useMaterialRenderStates": false,
+      "vs": "./Screen.vertex.hlsl",
+      "ps": "./BloomThreshold.pixel.hlsl",
+      "renderStates": {}
+    }
+  ],
+  "editorInfo":{
+    "assetVersion":2
+  }
+}

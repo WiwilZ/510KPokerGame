@@ -1,0 +1,33 @@
+{
+  "name": "System::Effect::ShowCubeMap",
+  "hideInEdtior": true,
+  "shaderProperties": [],
+  "textures": [
+    {
+      "key": "_MainTex",
+      "type": "TextureCube",
+      "default": "white"
+    }
+  ],
+  "defaultRenderQueue": 2000,
+  "passes": [
+    {
+      "lightMode": "ForwardBase",
+      "vs": "./ShowCubeMap.vertex.hlsl",
+      "ps": "./ShowCubeMap.pixel.hlsl",
+      "compileFlags": [],
+      "multiCompile": [],
+      "shaderFeatures": [],
+      "skipVariants": [],
+      "useMaterialRenderStates": true,
+      "renderStates": {
+        "blendOn": false,
+        "cullOn": true,
+        "cullFace": "BACK"
+      }
+    }
+  ],
+  "editorInfo":{
+    "assetVersion":2
+  }
+}

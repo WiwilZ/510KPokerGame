@@ -1,0 +1,71 @@
+{
+  "name": "System::Effect::Effect3D",
+  "shaderProperties": [
+    {
+      "key": "_MainTex_ST",
+      "type": "Vector4",
+      "default": [
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "key": "_TintColor",
+      "type": "Vector4",
+      "default": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "key": "_Bright",
+      "type": "Float",
+      "default": [
+        1.0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "key": "_MainTex",
+      "type": "Texture2D",
+      "default": "white"
+    },
+    {
+      "key": "_MaskTex",
+      "type": "Texture2D",
+      "default": "white"
+    }
+  ],
+  "defaultRenderQueue": 3000,
+  "passes": [
+    {
+      "lightMode": "ForwardBase",
+      "vs": "./Effect3D.vertex.hlsl",
+      "ps": "./Effect3D.pixel.hlsl",
+      "compileFlags": [
+        "Particle",
+        "Line",
+        "Trail",
+        "Skin",
+        "SkinnedAnimation"
+      ],
+      "useMaterialRenderStates": true,
+      "renderStates": {
+        "blendOn": true,
+        "blendSrc": "SRC_ALPHA",
+        "blendDst": "ONE",
+        "cullOn": false,
+        "cullFace": "BACK",
+        "depthWrite": false
+      }
+    }
+  ],
+  "editorInfo":{
+    "assetVersion":2
+  }
+}
